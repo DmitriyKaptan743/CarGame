@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -17,11 +18,14 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float sideforce = Input.GetAxis("Horizontal") * StrafeSpeed;
+        float sideforce = Input.GetAxis("Horizontal") * StrafeSpeed * Time.fixedDeltaTime;
 
         _rigidbody.AddForce(sideforce, 0f, 0f);
+        
     }
-
+    
+    
+    
     void Update()
     {
       
