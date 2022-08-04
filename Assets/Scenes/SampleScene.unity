@@ -1040,7 +1040,7 @@ MonoBehaviour:
   MaxLenght: 5
   speedRoad: 5
   maxPositionZ: -15
-  WaitingZone: {x: 0, y: 0, z: -40}
+  WaitingZone: {x: 0, y: 0, z: -50}
   roadNumbers: 00000000000000000000
 --- !u!4 &469060365
 Transform:
